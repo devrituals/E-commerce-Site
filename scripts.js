@@ -9,12 +9,10 @@ menuBtn.addEventListener("click", (e) => {
   menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
 });
 
-
 navLinks.addEventListener("click", (e) => {
   navLinks.classList.remove("open");
   menuBtnIcon.setAttribute("class", "ri-menu-line");
 });
-
 
 const scrollRevealOption = {
   distance: "50px",
@@ -63,7 +61,7 @@ const swiper = new Swiper(".swiper", {
     slideShadows: false,
     stretch: -100,
   },
-
+  
   pagination: {
     el: ".swiper-pagination",
   },
