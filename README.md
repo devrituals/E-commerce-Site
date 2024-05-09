@@ -1,4 +1,4 @@
-# Headphones
+# Headphones Haven
 
 Welcome to Headphones Haven! This is a website dedicated to everything about headphones. Whether you're a music enthusiast, a gamer, or someone who just appreciates great sound quality, you'll find valuable information and resources here.
 
