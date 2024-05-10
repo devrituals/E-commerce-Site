@@ -6,8 +6,8 @@ function add() {
     var password = document.getElementById('in2').value.trim();
 
     
-    if (password.length !<= 6) {
-        document.getElementById('s1').innerText = 'Password must contain 8 characters';
+    if (password.length <= 6) {
+        document.getElementById('s1').innerText = 'Password must contain 7 characters';
         return;
     }
 
