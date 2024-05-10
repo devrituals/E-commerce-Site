@@ -1,4 +1,4 @@
-var users = [{ username:'ali el', password:'ali123456' }, { username:'amine ze', password:'12345678' }];
+var users = [{ username:'Darwin', password:'oplatani' }, { username:'Said gd', password:'12345678' }];
 
 
 function add() {
@@ -6,7 +6,7 @@ function add() {
     var password = document.getElementById('in2').value.trim();
 
     
-    if (password.length !== 8) {
+    if (password.length !<= 6) {
         document.getElementById('s1').innerText = 'Password must contain 8 characters';
         return;
     }
