@@ -1,9 +1,9 @@
 div{
+justify-content: center;
 border: 3px solid blue;
 width: 200px;
 margin-left: 60px;
 margin-top: 50px;
 padding: 20px;
-justify-content: center;
-box-shadow: 8px;
+box-shadow: 5px 10px;
 }
