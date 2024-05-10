@@ -1,9 +1,10 @@
-body{
-  margin: 0 auto;
+body {
+  display:flex; flex-direction:column; justify-content:center;
+  min-height:100vh;
 }
 div{
 justify-content: center;
-border: 5px steelblue;
+border: 5px gray;
 width: 200px;
 margin-left: 60px;
 margin-top: 50px;
