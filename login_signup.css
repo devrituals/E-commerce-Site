@@ -1,3 +1,6 @@
+body.div{
+  justify-content: center;
+}
 div{
 justify-content: center;
 border: 3px solid blue;
