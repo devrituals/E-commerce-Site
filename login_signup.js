@@ -73,7 +73,7 @@ function login() {
         errorSpan.innerText = 'Password and username do not match';
         return false;
     }
-
+    window.location.href = 'https://devrituals.github.io/E-commerce-Site/';
     
-    return true;
+    return false;
 }
