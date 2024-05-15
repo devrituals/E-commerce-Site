@@ -1,79 +1,47 @@
-var users = [{ username:'Darwin', password:'oplatani' }, { username:'Said gd', password:'12345678' }];
+const tabList = document.querySelector(".tabs");
 
+tabList.addEventListener("click", (e) => {
+  if (e.target.classList.contains("active")) return;
 
-function add() {
-    var username = document.getElementById('in1').value.trim();
-    var password = document.getElementById('in2').value.trim();
+  const tabIndex = e.target.dataset.tab;
+  if (!tabIndex) return;
 
-    
-    if (password.length <= 6) {
-        document.getElementById('s1').innerText = 'Password must contain 7 characters';
-        return;
-    }
-
-    
-    var newUser = { username: username, password: password };
-    users.push(newUser);
-
-    
-    console.log('User list:', users);
-}
-
-
-function show() {
-    var table = document.getElementById('table1');
-
-    
-    table.innerHTML = '<tr><th>Nom Complet</th><th>Password</th></tr>';
-
-    
-    users.forEach(function(user) {
-        var row = table.insertRow();
-        var cell1 = row.insertCell(0);
-        var cell2 = row.insertCell(1);
-        cell1.textContent = user.username;
-        cell2.textContent = user.password;
-    });
-}
-
-
-function showPass() {
-    var passwordInput = document.getElementById('in4');
-    if (passwordInput.type === 'password') {
-        passwordInput.type = 'text';
+  const tabs = document.querySelectorAll("[data-tab]");
+  Array.from(tabs).forEach((tab) => {
+    if (tab.dataset.tab === tabIndex) {
+      tab.classList.add("active");
     } else {
-        passwordInput.type = 'password';
+      tab.classList.remove("active");
     }
-}
+  });
 
-
-function login() {
-    var username = document.getElementById('in3').value.trim();
-    var password = document.getElementById('in4').value.trim();
-    var errorSpan = document.getElementById('s2');
-
-    
-    if (username === '') {
-        errorSpan.innerText = 'Name must be filled out';
-        return false;
+  const activePanel = document.querySelector(".panel.active");
+  const toActivePanel = document.querySelector(`[data-panel="${tabIndex}"]`);
+  activePanel.classList.add("close");
+  activePanel.addEventListener(
+    "animationend",
+    (e) => {
+      activePanel.classList.remove("active");
+      activePanel.classList.remove("close");
+      toActivePanel.classList.add("active");
+    },
+    {
+      once: true,
     }
+  );
+});
 
-    
-    if (password === '') {
-        errorSpan.innerText = 'Password must be filled out';
-        return false;
-    }
+const showHidePasswords = (type) => {
+  const passwordButton = document.getElementById(`${type}-password-eye`);
+  passwordButton.addEventListener("click", (e) => {
+    const passwordInput = document.getElementById(`${type}-password`);
+    const icon = passwordButton.querySelector("i");
+    const isVisible = icon.classList.contains("ri-eye-fill");
+    passwordInput.type = isVisible ? "password" : "text";
+    icon.setAttribute("class", isVisible ? "ri-eye-off-fill" : "ri-eye-fill");
+  });
+};
 
-    
-    var match = users.some(function(user) {
-        return user.username === username && user.password === password;
-    });
-
-    if (!match) {
-        errorSpan.innerText = 'Password and username do not match';
-        return false;
-    }
-    window.location.href = 'https://devrituals.github.io/E-commerce-Site/';
-    
-    return false;
-}
+showHidePasswords("login");
+showHidePasswords("signup");
+showHidePasswords("confirm");
