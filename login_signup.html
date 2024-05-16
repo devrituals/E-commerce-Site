@@ -10,65 +10,33 @@
     <link rel="stylesheet" href="login_signup.css" />
   </head>
   <body>
-    <div class="container">
-      
-      <div class="content">
-        <h1>Log in to the world of audio excellence</h1>
-        <div class="tabs">
-          <button class="tab__btn active" data-tab="1">Log In</button>
-          <span></span>
-          <button class="tab__btn" data-tab="2">Sign Up</button>
-        </div>
-        <div class="tabs__panel">
-          <div class="panel active" data-panel="1">
-            <form action="/">
-              <div class="input__group">
-                <input type="email" placeholder=" " />
-                <label for="email">Email</label>
-              </div>
-              <div class="input__group">
-                <input type="password" id="login-password" placeholder=" " />
-                <label for="login-password">Password</label>
-                <span id="login-password-eye">
-                  <i class="ri-eye-off-fill"></i>
-                </span>
-              </div>
-              <button onclick="window.location.href='https://devrituals.github.io/E-commerce-Site/index.html'">Log In</button>
-
-              <p>or</p>
-              <a href="#">Forgot your password?</a>
-            </form>
-          </div>
-          <div class="panel" data-panel="2">
-            <form action="/">
-              <div class="input__group">
-                <input type="email" placeholder=" " />
-                <label for="email">Email</label>
-              </div>
-              <div class="input__group">
-                <input type="password" id="signup-password" placeholder=" " />
-                <label for="signup-password">Password</label>
-                <span id="signup-password-eye">
-                  <i class="ri-eye-off-fill"></i>
-                </span>
-              </div>
-              <div class="input__group">
-                <input type="password" id="confirm-password" placeholder=" " />
-                <label for="confirm-password">Confirm Password</label>
-                <span id="confirm-password-eye">
-                  <i class="ri-eye-off-fill"></i>
-                </span>
-              </div>
-              <button onclick="alert('Thank you for signing up!')">Sign Up</button>
-              <p>or</p>
-              <a href="#">Already have an account? <span>Login</span></a>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="image"></div>
-    </div>
-
-    <script src="login_signup.js"></script>
-  </body>
+    <html>
+<head>
+<link rel="stylesheet" href="test.css">
+</head>
+<body>
+<div id="div0">
+<input type="text" id="in1" placeholder="Enter you name"><br>
+<input type="text" id="in2" placeholder="Enter a password"><br>
+<span id="s1" style="color: red;"></span><br>
+<button onclick="add()">Add user</button>
+</div>
+<div id="div1">
+<button onclick="show()">Show users in table</button><br><br>
+<table border="2px" id="table1" >
+<tr><th>Nom Complet</th><th>Password</th></tr>
+</table>
+</div>
+<div id="div2">
+<form action="page5.html" onsubmit="return login()">
+<label for="in3">UserName:</label>
+<input type="text" id="in3"><br>
+<label for="in4">Password:</label>
+<input type="password" id="in4"><br>
+<span id="s2" style="color: red;"></span><br>
+<input type="checkbox" onclick="showPass()"> Show password
+<input type="submit" value="login">
+</form>
+</div>
+</body>
 </html>
