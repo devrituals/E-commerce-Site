@@ -197,7 +197,7 @@ body {
   
 @media (width > 540px) {
   .image {
-    min-height: 450px;
+    min-height: 250px;
   }
 }
 
