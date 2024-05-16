@@ -61,7 +61,7 @@ const swiper = new Swiper(".swiper", {
     slideShadows: false,
     stretch: -100,
   },
-  
+
   pagination: {
     el: ".swiper-pagination",
   },
