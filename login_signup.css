@@ -186,7 +186,7 @@ body {
   color: var(--white);
 }
 
-.image {
+.image img{
   height: 150px;
   width: 150px;
   background-position: center;
