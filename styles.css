@@ -280,7 +280,8 @@ img.header-bg {
 }
 
 .product__btn {
-  max-width: fit-content;
+  color: var(--text-dark);
+  background-color: var(--extra-light);
   padding: 0.75rem 3.5rem;
   outline: none;
   border: none;
@@ -293,11 +294,6 @@ img.header-bg {
   border-radius: 2rem;
   transition: 0.3s;
   cursor: pointer;
-}
-
-.product__btn .btn:hover {
-    color: var(--text-dark);
-  background-color: var(--extra-light);
 }
 
 .store__container h2 {
