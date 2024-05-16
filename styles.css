@@ -259,7 +259,7 @@ img.header-bg {
   cursor: pointer;
 }
 
-.product__colors > div:nth-child(1) {
+.product__colors:hover > div:nth-child(1) {
   background-color: #3a3a3a;
 }
 
