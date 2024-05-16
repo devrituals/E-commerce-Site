@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!tabIndex) return;
 
     const tabs = document.querySelectorAll("[data-tab]");
-    Array.from(tabs).forEach((tab) => {
+    tabs.forEach((tab) => {
       if (tab.dataset.tab === tabIndex) {
         tab.classList.add("active");
       } else {
@@ -45,20 +45,21 @@ document.addEventListener("DOMContentLoaded", function () {
   showHidePasswords("signup");
   showHidePasswords("confirm");
 
-
+  // Add event listener for login button
   const loginButton = document.querySelector('[data-tab="1"] button');
   loginButton.addEventListener("click", function(event) {
     event.preventDefault(); 
 
 
-    window.location.href = "index.html";
+    window.location.href = "page_x.html";
   });
+
 
   const signUpButton = document.querySelector('[data-tab="2"] button');
   signUpButton.addEventListener("click", function(event) {
 
     const loginTabButton = document.querySelector('[data-tab="1"] button');
-    loginTabButton.click();
+    loginTabButton.click(); 
 
 
     alert("Thank you for signing up!");
