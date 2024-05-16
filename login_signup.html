@@ -1,42 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="login_signup.css" />
-  </head>
-  <body>
-    <html>
 <head>
-<link rel="stylesheet" href="test.css">
+	<meta charset="UTF-8">
+	<title>Next Level Login & Registration  Form</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="div0">
-<input type="text" id="in1" placeholder="Enter you name"><br>
-<input type="text" id="in2" placeholder="Enter a password"><br>
-<span id="s1" style="color: red;"></span><br>
-<button onclick="add()">Add user</button>
-</div>
-<div id="div1">
-<button onclick="show()">Show users in table</button><br><br>
-<table border="2px" id="table1" >
-<tr><th>Nom Complet</th><th>Password</th></tr>
-</table>
-</div>
-<div id="div2">
-<form action="page5.html" onsubmit="return login()">
-<label for="in3">UserName:</label>
-<input type="text" id="in3"><br>
-<label for="in4">Password:</label>
-<input type="password" id="in4"><br>
-<span id="s2" style="color: red;"></span><br>
-<input type="checkbox" onclick="showPass()"> Show password
-<input type="submit" value="login">
-</form>
-</div>
+	<div class="container">
+		<div class="form signup">
+			<h2>Sign Up</h2>
+			<div class="inputBox">
+				<input type="text" required="required">
+				<i class="fa-regular fa-user"></i>
+				<span>username</span>
+			</div>
+			<div class="inputBox">
+				<input type="text" required="required">
+				<i class="fa-regular fa-envelope"></i>
+				<span>email address</span>
+			</div>
+			<div class="inputBox">
+				<input type="password" required="required">
+				<i class="fa-solid fa-lock"></i>
+				<span>create password</span>
+			</div>
+			<div class="inputBox">
+				<input type="password" required="required">
+				<i class="fa-solid fa-lock"></i>
+				<span>confirm password</span>
+			</div>
+			<div class="inputBox">
+				<input type="submit" value="Create Account">
+			</div>
+			<p>Already a member ? <a href="#" class="login">Log in</a></p>
+		</div>
+		
+		<div class="form signin">
+			<h2>Sign In</h2>
+			<div class="inputBox">
+				<input type="text" required="required">
+				<i class="fa-regular fa-user"></i>
+				<span>username</span>
+			</div>
+			<div class="inputBox">
+				<input type="password" required="required">
+				<i class="fa-solid fa-lock"></i>
+				<span>password</span>
+			</div>
+			<div class="inputBox">
+				<input type="submit" value="Login">
+			</div>
+			<p>Not Registered ? <a href="#" class="create">Create an account</a></p>
+		</div>
+    
+
+	</div>
+
+	<script src="login_signup.js"></script>
 </body>
 </html>
