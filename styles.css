@@ -279,23 +279,6 @@ img.header-bg {
   background-color: #754e27;
 }
 
-.product__btn {
-  color: var(--text-dark);
-  background-color: var(--extra-light);
-  padding: 0.75rem 3.5rem;
-  outline: none;
-  border: none;
-  font-size: 1rem;
-  font-weight: 500;
-  font-family: var(--header-font);
-  white-space: nowrap;
-  color: var(--white);
-  background-color: var(--text-dark);
-  border-radius: 2rem;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
 .store__container h2 {
   margin-bottom: 0.5rem;
   font-size: 2rem;
