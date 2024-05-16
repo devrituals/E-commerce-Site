@@ -151,7 +151,7 @@ body {
   cursor: pointer;
 }
 
-.panel form .input__group input.btn {
+.panel form button {
   max-width: fit-content;
   margin-inline: auto;
   margin-bottom: 2rem;
