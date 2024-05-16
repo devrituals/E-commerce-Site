@@ -187,8 +187,8 @@ body {
 }
 
 .image {
-  height: 100%;
-  min-height: 300px;
+  height: 80%;
+  min-height: 70px;
   background-image: url("assets/product.png");
   background-position: bottom center;
   background-size: cover;
