@@ -45,13 +45,22 @@ document.addEventListener("DOMContentLoaded", function () {
   showHidePasswords("signup");
   showHidePasswords("confirm");
 
-  // Add event listener for login button
+
   const loginButton = document.querySelector('[data-tab="1"] button');
   loginButton.addEventListener("click", function(event) {
-    event.preventDefault(); // Prevent form submission (if you're not using AJAX)
+    event.preventDefault(); 
 
-    // Redirect to page X
+
     window.location.href = "index.html";
   });
-});
 
+  const signUpButton = document.querySelector('[data-tab="2"] button');
+  signUpButton.addEventListener("click", function(event) {
+
+    const loginTabButton = document.querySelector('[data-tab="1"] button');
+    loginTabButton.click();
+
+
+    alert("Thank you for signing up!");
+  });
+});
