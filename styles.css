@@ -259,7 +259,7 @@ img.header-bg {
   cursor: pointer;
 }
 
-.product__colors:hover > div:nth-child(1) {
+.product__colors > div:nth-child(1) {
   background-color: #3a3a3a;
 }
 
@@ -280,12 +280,19 @@ img.header-bg {
 }
 
 .product__btn {
-  text-align: center;
-}
-
-.product__btn .btn {
-  color: var(--text-dark);
-  background-color: var(--white);
+  max-width: fit-content;
+  padding: 0.75rem 3.5rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: var(--header-font);
+  white-space: nowrap;
+  color: var(--white);
+  background-color: var(--text-dark);
+  border-radius: 2rem;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .product__btn .btn:hover {
