@@ -185,6 +185,15 @@ body {
 .panel form a:hover {
   color: var(--white);
 }
+
+ .image.img {
+  height: 1315px;
+  width: 1935px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
   
 @media (width > 540px) {
   .image img{
