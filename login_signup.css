@@ -187,8 +187,8 @@ body {
 }
 
  .image.img {
-  height: 140px;
-  width: 230px;
+  height: 75px;
+  width: 130px;
   background-position: bottom center;
   background-size: cover;
   background-repeat: no-repeat;
