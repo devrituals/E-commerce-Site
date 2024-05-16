@@ -234,7 +234,8 @@ img.header-bg {
 }
 
 .product__card a:hover {
-  color: var(--white);
+  color: var(--text-dark);
+  background-color: var(--extra-light);
 }
 
 .product__colors {
